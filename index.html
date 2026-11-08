@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annur Hasanah Budiarsa - Portfolio</title>
+    <title>Annur Hasanah Budiarsa - Portofolio</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -98,6 +98,18 @@
         }
     </style>
 </head>
+
+<!-- Elemen Stiker Dekoratif Melayang di Ruang Kosong Kiri -->
+<div class="hidden lg:block absolute left-10 bottom-10 z-10 pointer-events-none">
+    <div class="glass p-4 rounded-2xl bg-white/60 backdrop-blur-md border border-blue-100 shadow-sm animate-float flex items-center gap-3 w-64">
+        <div class="text-3xl">🐱</div>
+        <div>
+            <div class="font-bold text-gray-800 text-xs">Cinnamoroll & Cats Vibe ☁️</div>
+            <p class="text-[10px] text-gray-500">Menulis cerita & ngoding ditemani 3 anabul kesayangan.</p>
+        </div>
+    </div>
+</div>
+
 <body class="antialiased relative">
 
     <!-- Decorative Background Elements -->
@@ -145,20 +157,32 @@
         <svg class="absolute top-40 left-1/3 w-32 h-16 opacity-40 animate-drift" viewBox="0 0 100 50"><path d="M20 30 A10 10 0 0 1 40 30 A15 15 0 0 1 70 30 A10 10 0 0 1 90 30 Q90 50 70 50 L20 50 Q0 50 20 30 Z" fill="white"/></svg>
         <svg class="absolute top-2/3 right-1/4 w-40 h-20 opacity-50 animate-float-slow" viewBox="0 0 100 50"><path d="M20 30 A10 10 0 0 1 40 30 A15 15 0 0 1 70 30 A10 10 0 0 1 90 30 Q90 50 70 50 L20 50 Q0 50 20 30 Z" fill="white"/></svg>
     </div>
+   <!-- Navbar Atas -->
+<nav class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-blue-100 shadow-sm transition-all">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo / Nama Panggilan -->
+        <a href="#" class="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 flex items-center gap-2">
+            <span>✨</span> nana.space
+        </a>
 
-    <!-- Navigation -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-11/12 max-w-lg glass rounded-full px-6 py-3 z-50 transition-all duration-300">
-        <ul class="flex justify-between items-center text-sm sm:text-base font-bold text-gray-700">
-            <li><a href="#home" class="hover:text-blue-500 transition-colors px-2 py-1">Home</a></li>
-            <li><a href="#about" class="hover:text-blue-500 transition-colors px-2 py-1">About</a></li>
-            <li><a href="#portfolio" class="hover:text-blue-500 transition-colors px-2 py-1">Portfolio</a></li>
-            <li><a href="#contact" class="hover:text-blue-500 transition-colors px-2 py-1">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Menu Links -->
+        <div class="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-600">
+            <a href="#about" class="hover:text-blue-500 transition-colors">About</a>
+            <a href="#education" class="hover:text-blue-500 transition-colors">Education</a>
+            <a href="#portfolio" class="hover:text-blue-500 transition-colors">Portfolio</a>
+            <a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a>
+        </div>
+
+        <!-- Tombol Mobile / Status -->
+        <div class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-full border border-purple-100">
+            Sem 3 IT 💻
+        </div>
+    </div>
+</nav>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 pt-32 pb-20 max-w-5xl">
-        
+    <main class="max-w-4xl mx-auto px-4 pb-20">
+
         <!-- Hero Section -->
         <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center relative pt-10">
             <div class="glass-card p-10 rounded-3xl inline-block mb-6 relative">
@@ -167,10 +191,10 @@
                     <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Cinnamon&backgroundColor=b6e3f4" alt="Cute Icon" class="w-12 h-12 rounded-full">
                 </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500 mb-4">
-                    Welcome to My Portfolio
+                    Welcome to My Portofolio ☁️🦋
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 font-medium max-w-lg mx-auto">
-                    Hi! Let's explore my creative journey, projects, and everything in between.
+                    hi there!🐈‍⬛ mampir sebentar ke ruang mainku, yuk? 🌷.
                 </p>
                 <div class="mt-8">
                     <a href="#about" class="bg-gradient-to-r from-babyblue to-lilac text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all">
@@ -188,9 +212,9 @@
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-500">Annur</span></h2>
                         <h3 class="text-xl text-purple-600 font-semibold mb-6">Informatics Engineering Student</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
-                            Saya adalah mahasiswi semester 3 program studi Teknik Informatika di Universitas Muhammadiyah Sorong. 
-                            Saya memiliki minat yang besar dalam pengembangan web, desain antarmuka, dan penulisan kreatif. 
-                            Saya percaya bahwa teknologi dan kreativitas dapat menghasilkan karya yang tidak hanya fungsional, tetapi juga menyenangkan (seperti kucing dan Cinnamoroll!).
+                            hai, aku Nana! walau secara teknis aku ini mahasiswi IT, aslinya keseharianku lebih banyak diisi buat baca buku, nulis cerita, nonton drama Korea dan China. 
+                            oh! dan sering banget curhat ke AI kalau lagi buntu, wkwk. fyi, aku suka banget sama kucing 🐾 dan segala hal yang warna biru!💙🌊🐋 
+                            Di era di mana AI bisa bantu ngoding dan ngerangkai kata, satu-satunya yang engga bisa mereka tiru adalah feeling dan imajinasi kita sendiri.
                         </p>
                         <a href="#" class="inline-flex items-center bg-gray-800 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors shadow-md">
                             <i class="fa-solid fa-file-pdf mr-2"></i> View CV
@@ -204,158 +228,211 @@
                     </div>
                 </div>
 
-                <!-- Timeline / Education & Experience -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 pt-10 border-t border-white/50">
-                    <!-- Education -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                            <i class="fa-solid fa-graduation-cap text-blue-500 mr-3"></i> Education
-                        </h3>
-                        <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-blue-300 before:to-transparent">
-                            <!-- Item -->
-                            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-babyblue text-white shadow shrink-0 z-10 font-bold">1</div>
-                                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl glass shadow">
-                                    <div class="font-bold text-gray-800">Universitas Muhammadiyah Sorong</div>
-                                    <div class="text-sm text-blue-600 font-semibold mb-1">Informatics Engineering (S1)</div>
-                                    <div class="text-xs text-gray-500">2022 - Present</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Timeline Section: Education & Experience -->
+<section id="education" class="py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Kolom Kiri: Education -->
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-graduation-cap text-blue-500 mr-2"></i> Education
+            </h3>
+            <!-- Tambahkan relative dan pastikan garis membentang -->
+            <div class="space-y-6 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-blue-200">
 
-                    <!-- Experience -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                            <i class="fa-solid fa-briefcase text-purple-500 mr-3"></i> Experience & Org.
-                        </h3>
-                        <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-purple-300 before:to-transparent">
-                            <!-- Item -->
-                            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-purple-400 text-white shadow shrink-0 z-10 font-bold"><i class="fa-solid fa-users"></i></div>
-                                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl glass shadow">
-                                    <div class="font-bold text-gray-800">Media Creative Information</div>
-                                    <div class="text-sm text-purple-600 font-semibold mb-1">Staff / Member</div>
-                                    <div class="text-xs text-gray-500">Active</div>
-                                    <p class="text-xs text-gray-600 mt-2">Terlibat dalam pengelolaan informasi kreatif, desain, dan publikasi media organisasi.</p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Item 1 -->
+                <div class="relative flex items-center space-x-4">
+                    <div class="w-8 h-8 rounded-full bg-blue-400 text-white flex items-center justify-center font-bold text-xs shrink-0 z-10 shadow">1</div>
+                    <div class="flex-1 p-4 rounded-xl bg-white/70 backdrop-blur-md border border-white/80 shadow-sm">
+                        <div class="font-bold text-gray-800 text-sm">Universitas Muhammadiyah Sorong</div>
+                        <div class="text-xs text-blue-600 font-semibold mb-1">Informatics Engineering (S1)</div>
+                        <div class="text-[10px] text-gray-500">2025 - Present</div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="py-20 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">My <span class="text-blue-500">Portfolio</span></h2>
+                <!-- Item 2 -->
+                <div class="relative flex items-center space-x-4">
+                    <div class="w-8 h-8 rounded-full bg-purple-400 text-white flex items-center justify-center font-bold text-xs shrink-0 z-10 shadow">2</div>
+                    <div class="flex-1 p-4 rounded-xl bg-white/70 backdrop-blur-md border border-white/80 shadow-sm">
+                        <div class="font-bold text-gray-800 text-sm">MAN Kota Sorong</div>
+                        <div class="text-xs text-purple-600 font-semibold mb-1">IPA</div>
+                        <div class="text-[10px] text-gray-500">2022 - 2025</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Experience & Organisasi. -->
+        <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-briefcase text-purple-500 mr-2"></i> Experience & Org.
+            </h3>
+            <div class="space-y-6 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-purple-200">
+                
+                <!-- Item 2 -->
+                <div class="relative flex items-center space-x-4">
+                    <div class="w-8 h-8 rounded-full bg-purple-400 text-white flex items-center justify-center text-xs shrink-0 z-10 shadow">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="flex-1 p-4 rounded-xl bg-white/70 backdrop-blur-md border border-white/80 shadow-sm">
+                        <div class="font-bold text-gray-800 text-sm">Media Creative Information (MCI)</div>
+                        <div class="text-xs text-purple-600 font-semibold mb-1">Divisi Cinematography</div>
+                        <div class="text-[10px] text-gray-500">2026 - Present</div>
+                        <p class="text-[11px] text-gray-600 mt-1">Merancang konsep visual kreatif, mengoperasikan perangkat pengambilan gambar, dan memproduksi konten video berkualitas tinggi untuk mendukung publikasi serta branding organisasi kampus.</p>
+                    </div>
+                </div>
+
+                <!-- Item 1 -->
+                <div class="relative flex items-center space-x-4">
+                    <div class="w-8 h-8 rounded-full bg-blue-400 text-white flex items-center justify-center text-xs shrink-0 z-10 shadow">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <div class="flex-1 p-4 rounded-xl bg-white/70 backdrop-blur-md border border-white/80 shadow-sm">
+                        <div class="font-bold text-gray-800 text-sm">Enhanced Language Instructional Center (ELICE)</div>
+                        <div class="text-xs text-blue-600 font-semibold mb-1">Sekretaris</div>
+                        <div class="text-[10px] text-gray-500">2024 - 2025</div>
+                        <p class="text-[11px] text-gray-600 mt-1">Mengelola administrasi kesekretariatan secara komprehensif, menyusun dokumentasi program kerja bahasa Inggris dan Arab, serta memastikan kelancaran komunikasi internal organisasi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 scroll-mt-20">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">My <span class="text-blue-500">Portfolio</span></h2>
+    
+    <!-- Tabs Navigasi -->
+    <div class="flex justify-center mb-10 overflow-x-auto no-scrollbar">
+        <div class="glass flex p-1.5 rounded-full space-x-2 bg-white/50 backdrop-blur-sm border border-blue-100">
+            <button onclick="filterPortfolio('all')" id="tab-all" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm bg-blue-100 shadow-sm text-blue-600 transition-all">All</button>
+            <button onclick="filterPortfolio('coding')" id="tab-coding" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-500 transition-all">Coding</button>
+            <button onclick="filterPortfolio('writings')" id="tab-writings" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:bg-purple-50 hover:text-purple-500 transition-all">Writings</button>
+            <button onclick="filterPortfolio('certificates')" id="tab-certificates" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-500 transition-all">Certificates</button>
+        </div>
+    </div>
+
+    <!-- Grid Kontainer -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        
+        <!-- Item 1: Coding (Sistem Cerdas) -->
+        <div class="portfolio-item coding glass-card rounded-2xl p-5 flex flex-col bg-white/60 backdrop-blur-md border border-white/80 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-40 bg-blue-50 rounded-xl mb-5 flex items-center justify-center overflow-hidden relative group border border-blue-100">
+                <i class="fa-solid fa-robot text-5xl text-blue-300 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <span class="text-xs font-bold text-blue-500 mb-2 uppercase tracking-wider">AI / Team Project</span>
+            <h4 class="font-bold text-gray-800 text-lg mb-2">Deteksi Donghua AI & Non-AI</h4>
+            <p class="text-sm text-gray-600 mb-4 flex-grow">Riset kolaboratif membangun sistem cerdas menggunakan arsitektur Vision Transformer dan MobileNetV4 untuk klasifikasi gambar AI & gambar Non-AI.</p>
+            <a href="#" class="text-sm font-bold text-blue-500 hover:text-blue-700 flex items-center"><i class="fa-brands fa-github mr-2"></i> View Repository &rarr;</a>
+        </div>
+
+        <!-- Item 2: Writings (Novel Cetak) -->
+        <div class="portfolio-item writings glass-card rounded-2xl p-5 flex flex-col bg-white/60 backdrop-blur-md border border-white/80 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-40 bg-purple-50 rounded-xl mb-5 flex items-center justify-center overflow-hidden relative group border border-purple-100">
+                <i class="fa-solid fa-book-open-reader text-5xl text-purple-300 group-hover:scale-110 transition-transform"></i>
+                <!-- Dekorasi kecil -->
+                <span class="absolute bottom-2 right-3 text-xl opacity-50">🐈</span>
+            </div>
+            <span class="text-xs font-bold text-purple-500 mb-2 uppercase tracking-wider">Published Books</span>
+            <h4 class="font-bold text-gray-800 text-lg mb-2">Koleksi Dua Novel Cetak</h4>
+            <p class="text-sm text-gray-600 mb-4 flex-grow">Dua karya novel fisik yang resmi diterbitkan pada Oktober 2025. Kombinasi narasi fiksi dengan resolusi emosional.</p>
+            <!-- Tombol ini memicu fungsi Modal Popup yang sudah kita buat -->
+            <button id="openNovelBtn" class="text-left text-sm font-bold text-purple-500 hover:text-purple-700">Lihat Detail Novel &rarr;</button>
+        </div>
+
+        <!-- Item 3: Certificates (Penulis Fiksi) -->
+        <div class="portfolio-item certificates glass-card rounded-2xl p-5 flex flex-col bg-white/60 backdrop-blur-md border border-white/80 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="h-40 bg-blue-50 rounded-xl mb-5 flex items-center justify-center overflow-hidden relative group border border-blue-100">
+                <i class="fa-solid fa-award text-5xl text-blue-300 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <span class="text-xs font-bold text-blue-500 mb-2 uppercase tracking-wider">Achievement</span>
+            <h4 class="font-bold text-gray-800 text-lg mb-2">Sertifikat Penulis Fiksi</h4>
+            <p class="text-sm text-gray-600 mb-4 flex-grow">Validasi kompetensi resmi dalam penulisan kreatif dan pencapaian target penerbitan dalam industri literatur.</p>
+            <a href="#" class="text-sm font-bold text-blue-500 hover:text-blue-700">Lihat Sertifikat &rarr;</a>
+        </div>
+
+    </div>
+</section>
+
+       <!-- Contact & Comments Section -->
+<section id="contact" class="py-20 scroll-mt-20">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Get in <span class="text-purple-500">Touch</span></h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center">
+        
+        <!-- Find Me (Socials) dengan Logo Asli -->
+        <div class="glass-card rounded-3xl p-6 bg-white/60 backdrop-blur-md border border-white/80 shadow-sm max-w-xl mx-auto w-full">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Find Me Here 🐾</h3>
+            <p class="text-xs text-gray-500 text-center mb-6">Klik salah satu platform di bawah untuk langsung terhubung ke akun resmi saya!</p>
             
-            <!-- Tabs -->
-            <div class="flex justify-center mb-8 overflow-x-auto no-scrollbar">
-                <div class="glass flex p-1 rounded-full space-x-1">
-                    <button onclick="filterPortfolio('all')" id="tab-all" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm bg-white shadow-sm text-blue-600 transition-all">All</button>
-                    <button onclick="filterPortfolio('coding')" id="tab-coding" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:text-blue-500 transition-all">Coding</button>
-                    <button onclick="filterPortfolio('writings')" id="tab-writings" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:text-blue-500 transition-all">Writings</button>
-                    <button onclick="filterPortfolio('certificates')" id="tab-certificates" class="portfolio-tab px-6 py-2 rounded-full font-bold text-sm text-gray-600 hover:text-blue-500 transition-all">Certificates</button>
-                </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <!-- Instagram -->
+                <!-- Ganti https://instagram.com/USERNAME_KAMU dengan link akunmu -->
+                <a href="https://instagram.com/bdrsna" target="_blank" rel="noopener noreferrer" class="flex items-center p-3 bg-white/70 rounded-xl hover:bg-white hover:shadow-md transition-all border border-pink-100 group">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                        <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" class="w-7 h-7">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700 text-sm">Instagram</div>
+                        <div class="text-xs text-gray-400">@bdrsna</div>
+                    </div>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://tiktok.com/nnaatoss" target="_blank" rel="noopener noreferrer" class="flex items-center p-3 bg-white/70 rounded-xl hover:bg-white hover:shadow-md transition-all border border-gray-200 group">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                        <img src="https://cdn.simpleicons.org/tiktok/000000" alt="TikTok" class="w-7 h-7">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700 text-sm">TikTok</div>
+                        <div class="text-xs text-gray-400">@nnaatoss</div>
+                    </div>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://twitter.com/nnanaarraa" target="_blank" rel="noopener noreferrer" class="flex items-center p-3 bg-white/70 rounded-xl hover:bg-white hover:shadow-md transition-all border border-gray-200 group">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                        <img src="https://cdn.simpleicons.org/x/000000" alt="X (Twitter)" class="w-6 h-6">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700 text-sm">X (Twitter)</div>
+                        <div class="text-xs text-gray-400">@nnanaarraa</div>
+                    </div>
+                </a>
+
+                <!-- Wattpad -->
+                <a href="https://www.wattpad.com/user/lovaaawrites" target="_blank" rel="noopener noreferrer" class="flex items-center p-3 bg-white/70 rounded-xl hover:bg-white hover:shadow-md transition-all border border-orange-100 group">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                        <img src="https://cdn.simpleicons.org/wattpad/FF500A" alt="Wattpad" class="w-7 h-7">
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700 text-sm">Wattpad</div>
+                        <div class="text-xs text-gray-400">@lovaaawrites</div>
+                    </div>
+                </a>
+
+                <!-- KaryaKarsa -->
+                <a href="https://karyakarsa.com/lovaaawrites" target="_blank" rel="noopener noreferrer" class="flex items-center p-3 bg-white/70 rounded-xl hover:bg-white hover:shadow-md transition-all border border-blue-100 sm:col-span-2 justify-center group">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform bg-blue-500 text-white font-bold text-lg shadow-sm">
+                        K
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700 text-sm">KaryaKarsa</div>
+                        <div class="text-xs text-gray-400">karyakarsa.com/lovaaawrites</div>
+                    </div>
+                </a>
+
             </div>
+        </div>
 
-            <!-- Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
-                
-                <!-- Item 1: Coding -->
-                <div class="portfolio-item coding glass-card rounded-2xl p-4 flex flex-col">
-                    <div class="h-40 bg-blue-100 rounded-xl mb-4 flex items-center justify-center overflow-hidden relative group">
-                        <i class="fa-solid fa-code text-5xl text-blue-300 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <span class="text-xs font-bold text-blue-500 mb-2 uppercase">Coding Project</span>
-                    <h4 class="font-bold text-gray-800 text-lg mb-2">Web Akademik</h4>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Sistem informasi akademik sederhana berbasis HTML, CSS, dan PHP.</p>
-                    <a href="#" class="text-sm font-bold text-purple-600 hover:text-purple-800">View Project &rarr;</a>
-                </div>
-
-                <!-- Item 2: Writings -->
-                <div class="portfolio-item writings glass-card rounded-2xl p-4 flex flex-col">
-                    <div class="h-40 bg-purple-100 rounded-xl mb-4 flex items-center justify-center overflow-hidden relative group">
-                        <i class="fa-solid fa-pen-nib text-5xl text-purple-300 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <span class="text-xs font-bold text-purple-500 mb-2 uppercase">Writings</span>
-                    <h4 class="font-bold text-gray-800 text-lg mb-2">Cerita Fiksi Wattpad</h4>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Novel remaja dengan tema persahabatan dan teknologi, mencapai 10k pembaca.</p>
-                    <a href="#" class="text-sm font-bold text-blue-600 hover:text-blue-800">Read on Wattpad &rarr;</a>
-                </div>
-
-                <!-- Item 3: Certificates -->
-                <div class="portfolio-item certificates glass-card rounded-2xl p-4 flex flex-col">
-                    <div class="h-40 bg-yellow-50 rounded-xl mb-4 flex items-center justify-center overflow-hidden relative group">
-                        <i class="fa-solid fa-award text-5xl text-yellow-300 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <span class="text-xs font-bold text-yellow-600 mb-2 uppercase">Certificates</span>
-                    <h4 class="font-bold text-gray-800 text-lg mb-2">Dicoding Web Basic</h4>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Sertifikasi kelulusan kelas dasar pemrograman web dari Dicoding Indonesia.</p>
-                    <a href="#" class="text-sm font-bold text-purple-600 hover:text-purple-800">View Credential &rarr;</a>
-                </div>
-                
-                <!-- Item 4: Coding -->
-                <div class="portfolio-item coding glass-card rounded-2xl p-4 flex flex-col">
-                    <div class="h-40 bg-blue-100 rounded-xl mb-4 flex items-center justify-center overflow-hidden relative group">
-                        <i class="fa-brands fa-react text-5xl text-blue-300 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <span class="text-xs font-bold text-blue-500 mb-2 uppercase">Coding Project</span>
-                    <h4 class="font-bold text-gray-800 text-lg mb-2">Kalkulator UI/UX</h4>
-                    <p class="text-sm text-gray-600 mb-4 flex-grow">Desain antarmuka kalkulator estetik menggunakan Figma dan diimplementasikan ke CSS.</p>
-                    <a href="#" class="text-sm font-bold text-purple-600 hover:text-purple-800">View Project &rarr;</a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact & Comments Section -->
-        <section id="contact" class="py-20 scroll-mt-20">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Get in <span class="text-purple-500">Touch</span></h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                
-                <!-- Left Column: Find Me & Form -->
-                <div class="space-y-8">
-                    <!-- Find Me (Socials) -->
-                    <div class="glass-card rounded-3xl p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Find Me Here 🐾</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <a href="#" class="flex items-center p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-md transition-all">
-                                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center text-white mr-3">
-                                    <i class="fa-brands fa-instagram text-xl"></i>
-                                </div>
-                                <span class="font-semibold text-gray-700">Instagram</span>
-                            </a>
-                            <a href="#" class="flex items-center p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-md transition-all">
-                                <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mr-3">
-                                    <i class="fa-brands fa-tiktok text-xl"></i>
-                                </div>
-                                <span class="font-semibold text-gray-700">TikTok</span>
-                            </a>
-                            <a href="#" class="flex items-center p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-md transition-all">
-                                <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mr-3">
-                                    <i class="fa-brands fa-x-twitter text-xl"></i>
-                                </div>
-                                <span class="font-semibold text-gray-700">X (Twitter)</span>
-                            </a>
-                            <!-- Wattpad -->
-                            <a href="#" class="flex items-center p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-md transition-all">
-                                <div class="w-10 h-10 rounded-full bg-[#FF500A] flex items-center justify-center text-white mr-3 font-bold text-xl">
-                                    W
-                                </div>
-                                <span class="font-semibold text-gray-700">Wattpad</span>
-                            </a>
-                            <!-- KaryaKarsa -->
-                            <a href="#" class="flex items-center p-3 bg-white/50 rounded-xl hover:bg-white hover:shadow-md transition-all col-span-2">
-                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white mr-3 font-bold text-xl">
-                                    K
-                                </div>
-                                <span class="font-semibold text-gray-700">KaryaKarsa</span>
-                            </a>
-                        </div>
-                    </div>
+    </div>
+</section>
 
                     <!-- Contact Form -->
                     <div class="glass-card rounded-3xl p-6">
@@ -514,75 +591,91 @@
             }, 1000);
         }
 
-        // --- 4. Comment System (In-Memory) ---
-        // Initial Dummy Data
-        let comments = [
-            { id: 1, name: 'Dosen Web Dev', text: 'Struktur HTML semantiknya sudah bagus, Annur. Lanjutkan!', date: 'Hari ini' },
-            { id: 2, name: 'Teman Kelas', text: 'Ih lucu banget webnyaaa 😍 ada kucingnya!', date: 'Kemarin' }
-        ];
-
-        function renderComments() {
-            const list = document.getElementById('comment-list');
-            const count = document.getElementById('comment-count');
-            
-            list.innerHTML = '';
-            count.innerText = `(${comments.length})`;
-
-            if (comments.length === 0) {
-                list.innerHTML = '<p class="text-sm text-gray-500 text-center italic mt-4">Belum ada komentar. Jadilah yang pertama!</p>';
-                return;
-            }
-
-            // Render from newest (last in array) to oldest
-            [...comments].reverse().forEach(comment => {
-                const bgColors = ['bg-blue-100', 'bg-purple-100', 'bg-pink-100', 'bg-yellow-100'];
-                const randomBg = bgColors[comment.id % bgColors.length];
-                
-                const html = `
-                    <div class="bg-white/60 p-3 rounded-xl shadow-sm border border-white">
-                        <div class="flex items-center mb-1">
-                            <div class="w-8 h-8 rounded-full ${randomBg} flex items-center justify-center text-xs font-bold text-gray-700 mr-2 uppercase">
-                                ${comment.name.substring(0,2)}
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-bold text-gray-800">${comment.name}</h4>
-                                <p class="text-[10px] text-gray-500">${comment.date}</p>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-700 pl-10">${comment.text}</p>
-                    </div>
-                `;
-                list.insertAdjacentHTML('beforeend', html);
-            });
-        }
-
-        function handleAddComment(e) {
-            e.preventDefault();
-            const nameInput = document.getElementById('comment-name');
-            const textInput = document.getElementById('comment-text');
-            
-            if (!nameInput.value.trim() || !textInput.value.trim()) return;
-
-            const newComment = {
-                id: Date.now(),
-                name: nameInput.value.trim(),
-                text: textInput.value.trim(),
-                date: 'Baru saja'
-            };
-
-            comments.push(newComment);
-            renderComments();
-            
-            // Reset & Scroll to top of list
-            nameInput.value = '';
-            textInput.value = '';
-            document.getElementById('comment-list').scrollTop = 0;
-        }
-
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             renderComments();
         });
     </script>
+
+    <!-- Modal Popup Novel (Hidden by default) -->
+<div id="novelModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden px-4">
+    <div class="bg-white/90 backdrop-blur-xl border border-purple-100 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl relative transform transition-all scale-95 animate-in">
+        
+        <!-- Tombol Tutup (X) -->
+        <button id="closeNovelBtn" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-purple-100 text-gray-500 hover:text-purple-600 flex items-center justify-center font-bold transition-colors">
+            &times;
+        </button>
+
+        <!-- Konten Modal -->
+        <div class="text-center mb-6">
+            <span class="text-xs font-bold text-purple-500 uppercase tracking-wider bg-purple-50 px-3 py-1 rounded-full">Published October 2025</span>
+            <h3 class="text-2xl font-bold text-gray-800 mt-3">Koleksi Dua Novel Cetak 📖</h3>
+            <p class="text-xs text-gray-500 mt-1">Karya fiksi literatur digital yang berhasil diterbitkan secara fisik.</p>
+        </div>
+
+        <!-- Detail Buku (Bisa diisi 2 buku kamu) -->
+        <div class="space-y-4 mb-6">
+            <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-100 flex items-start gap-4">
+                <div class="w-12 h-16 bg-purple-200 rounded-lg flex items-center justify-center text-xl shrink-0 font-bold text-purple-600">1</div>
+                <div>
+                    <h4 class="font-bold text-gray-800 text-sm">Tangisan Laut Biru</h4>
+                    <p class="text-xs text-gray-600 mt-1">Thallasophile, istilah bahasa Yunani yang mengartikan sebagai seseorang yang memiliki ketertarikan terhadap laut, samudra, dan apa pun yang berhubungan dengan lautan. Nathalie Ghazea Zamora, si gadis yang menyukai semua tentang lautan.
+                        Tidak sampai di situ, banyak rintangan yang harus dihadapi oleh Nathalie. Termasuk kehilangan orang-orang yang sangat berarti dalam hidupnya. Semenjak beberapa kejadian yang membuatnya hampir putus asa, Nathalie sering mengunjungi pantai.
+                        Duduk di ujung pelabuhan dengan kedua kaki dipeluknya erat, sambil memandang sendu pada bulan yang bulat sempurna. Ditemani satu bintang yang sangat terang dan mampu menyinari wajahnya pada malam itu..</p>
+                </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-blue-50/50 border border-blue-100 flex items-start gap-4">
+                <div class="w-12 h-16 bg-blue-200 rounded-lg flex items-center justify-center text-xl shrink-0 font-bold text-blue-600">2</div>
+                <div>
+                    <h4 class="font-bold text-gray-800 text-sm">Menjemput Harapan</h4>
+                    <p class="text-xs text-gray-600 mt-1">Tentang sebuah perjalanan dari seseorang bernama Arta Mahameru, remaja lelaki berusia 12 tahun yang tengah dihadapi oleh berbagai kesulitan dalam hidupnya. Melalui proses penyembuhan diri yang penuh dengan rintangan, Arta selalu menguatkan hatinya untuk menghadapi segala marabahaya yang datang dari masa depan, lalu menjemput satu-satunya harapan yang remaja itu inginkan; ketenangan.
+                        Orang-orang di luar sana memandang Arta sebagai anak yang dilimpahi dengan fasilitas mewah dan megah dengan harta yang gemilang, sangat banyak. Namun, mereka melupakan satu hal. Benar, "keadaan" sebenarnya yang terjadi di dalam rumah itu.
+                        Arta Mahameru ... hidupnya yang sangat malang. Dari guratan wajahnya kelihatan damai, namun, siapa sangka? Isi kepalanya sangat berisik. Tertekan, muak, kecewa, semua emosional itu terus menenggelami dirinya.
+                        Akankah Arta sanggup untuk menjemput harapannya?.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Aksi ke Wattpad / KaryaKarsa -->
+        <div class="flex gap-3">
+            <a href="https://www.wattpad.com/user/lovaaawrites" target="_blank" class="flex-1 text-center py-2.5 px-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl text-xs font-bold transition-all shadow-sm">
+                Baca di Wattpad 
+            </a>
+            <a href="https://karyakarsa.com/lovaaawrites" target="_blank" class="flex-1 text-center py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-all shadow-sm">
+                Dukung di KaryaKarsa
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Script JavaScript Sederhana untuk Mengontrol Modal -->
+<script>
+    const modal = document.getElementById('novelModal');
+    const openBtn = document.getElementById('openNovelBtn');
+    const closeBtn = document.getElementById('closeNovelBtn');
+
+    // Buka modal saat tombol di portofolio diklik
+    if (openBtn) {
+        openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+    }
+
+    // Tutup modal saat tombol 'X' diklik
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+    }
+
+    // Tutup modal jika klik di luar area kotak modal
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.add('hidden');
+        }
+    });
+</script>
 </body>
 </html>
