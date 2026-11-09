@@ -175,7 +175,7 @@
 
         <!-- Tombol Mobile / Status -->
         <div class="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-full border border-purple-100">
-            Sem 3 IT 💻
+            cewe teknik 💻
         </div>
     </div>
 </nav>
@@ -213,18 +213,15 @@
                         <h3 class="text-xl text-purple-600 font-semibold mb-6">Informatics Engineering Student</h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             hai, aku Nana! walau secara teknis aku ini mahasiswi IT, aslinya keseharianku lebih banyak diisi buat baca buku, nulis cerita, nonton drama Korea dan China. 
-                            oh! dan sering banget curhat ke AI kalau lagi buntu, wkwk. fyi, aku suka banget sama kucing 🐾 dan segala hal yang warna biru!💙🌊🐋 
-                            Di era di mana AI bisa bantu ngoding dan ngerangkai kata, satu-satunya yang engga bisa mereka tiru adalah feeling dan imajinasi kita sendiri.
+                            oh! dan sering banget curhat ke AI kalau lagi buntu, wkwk.
+                            fyi, aku suka banget sama kucing 🐾 dan segala hal yang warna biru!💙🌊🐋 
+                            aku cuma mau ngasih tau... di era di mana AI bisa bantu ngoding dan ngerangkai kata, satu-satunya yang engga bisa mereka tiru adalah feeling dan imajinasi kita sendiri.
                         </p>
-                        <a href="#" class="inline-flex items-center bg-gray-800 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors shadow-md">
-                            <i class="fa-solid fa-file-pdf mr-2"></i> View CV
-                        </a>
                     </div>
                     <div class="flex justify-center relative">
-                        <!-- Profile Image Placeholder -->
-                        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-white shadow-xl overflow-hidden bg-gradient-to-br from-babyblue to-lilac relative">
-                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Annur&backgroundColor=e6e6fa" alt="Annur Profile" class="w-full h-full object-cover">
-                        </div>
+                        <!-- Ganti bagian SVG ilustrasi lama dengan ini -->
+                        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
+                            <img src="foto-nana.jpg.jpeg" alt="Annur Hasanah Budiarsa" class="w-full h-full object-cover"></div>
                     </div>
                 </div>
 
@@ -342,7 +339,9 @@
             <h4 class="font-bold text-gray-800 text-lg mb-2">Koleksi Dua Novel Cetak</h4>
             <p class="text-sm text-gray-600 mb-4 flex-grow">Dua karya novel fisik yang resmi diterbitkan pada Oktober 2025. Kombinasi narasi fiksi dengan resolusi emosional.</p>
             <!-- Tombol ini memicu fungsi Modal Popup yang sudah kita buat -->
-            <button id="openNovelBtn" class="text-left text-sm font-bold text-purple-500 hover:text-purple-700">Lihat Detail Novel &rarr;</button>
+            <button id="openNovelBtn" class="text-purple-600 font-semibold text-sm hover:underline flex items-center gap-1 cursor-pointer">
+                Lihat Detail Novel &rarr;
+            </button>
         </div>
 
         <!-- Item 3: Certificates (Penulis Fiksi) -->
@@ -368,7 +367,7 @@
         <!-- Find Me (Socials) dengan Logo Asli -->
         <div class="glass-card rounded-3xl p-6 bg-white/60 backdrop-blur-md border border-white/80 shadow-sm max-w-xl mx-auto w-full">
             <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Find Me Here 🐾</h3>
-            <p class="text-xs text-gray-500 text-center mb-6">Klik salah satu platform di bawah untuk langsung terhubung ke akun resmi saya!</p>
+            <p class="text-xs text-gray-500 text-center mb-6">Klik salah satu platform di bawah ini untuk langsung terhubung ke akun aku!</p>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 
@@ -424,7 +423,7 @@
                     </div>
                     <div>
                         <div class="font-semibold text-gray-700 text-sm">KaryaKarsa</div>
-                        <div class="text-xs text-gray-400">karyakarsa.com/lovaaawrites</div>
+                        <div class="text-xs text-gray-400">@lovaaawrites</div>
                     </div>
                 </a>
 
@@ -597,12 +596,12 @@
         });
     </script>
 
-    <!-- Modal Popup Novel (Hidden by default) -->
+    <!-- Modal Popup Novel & Sinopsis Karya -->
 <div id="novelModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm hidden px-4">
-    <div class="bg-white/90 backdrop-blur-xl border border-purple-100 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl relative transform transition-all scale-95 animate-in">
+    <div class="bg-white/90 backdrop-blur-xl border border-purple-100 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl relative transform transition-all scale-95">
         
         <!-- Tombol Tutup (X) -->
-        <button id="closeNovelBtn" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-purple-100 text-gray-500 hover:text-purple-600 flex items-center justify-center font-bold transition-colors">
+        <button id="closeNovelBtn" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-purple-100 text-gray-500 hover:text-purple-600 flex items-center justify-center font-bold transition-colors cursor-pointer">
             &times;
         </button>
 
@@ -613,26 +612,21 @@
             <p class="text-xs text-gray-500 mt-1">Karya fiksi literatur digital yang berhasil diterbitkan secara fisik.</p>
         </div>
 
-        <!-- Detail Buku (Bisa diisi 2 buku kamu) -->
-        <div class="space-y-4 mb-6">
-            <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-100 flex items-start gap-4">
+        <!-- Detail Buku (Tangisan Laut Biru & Menjemput Harapan) -->
+        <div class="space-y-4 mb-6 max-h-[50vh] overflow-y-auto pr-2">
+            <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-100 flex items-start gap-4 text-left">
                 <div class="w-12 h-16 bg-purple-200 rounded-lg flex items-center justify-center text-xl shrink-0 font-bold text-purple-600">1</div>
                 <div>
                     <h4 class="font-bold text-gray-800 text-sm">Tangisan Laut Biru</h4>
-                    <p class="text-xs text-gray-600 mt-1">Thallasophile, istilah bahasa Yunani yang mengartikan sebagai seseorang yang memiliki ketertarikan terhadap laut, samudra, dan apa pun yang berhubungan dengan lautan. Nathalie Ghazea Zamora, si gadis yang menyukai semua tentang lautan.
-                        Tidak sampai di situ, banyak rintangan yang harus dihadapi oleh Nathalie. Termasuk kehilangan orang-orang yang sangat berarti dalam hidupnya. Semenjak beberapa kejadian yang membuatnya hampir putus asa, Nathalie sering mengunjungi pantai.
-                        Duduk di ujung pelabuhan dengan kedua kaki dipeluknya erat, sambil memandang sendu pada bulan yang bulat sempurna. Ditemani satu bintang yang sangat terang dan mampu menyinari wajahnya pada malam itu..</p>
+                    <p class="text-xs text-gray-600 mt-1">Nathalie Ghazea Zamora, si gadis thallasophile yang mencintai lautan. Di balik kecintaannya, ia harus menghadapi kehilangan orang-orang berarti dan sering merenung di ujung pelabuhan memandang bulan dan bintang.</p>
                 </div>
             </div>
 
-            <div class="p-4 rounded-2xl bg-blue-50/50 border border-blue-100 flex items-start gap-4">
+            <div class="p-4 rounded-2xl bg-blue-50/50 border border-blue-100 flex items-start gap-4 text-left">
                 <div class="w-12 h-16 bg-blue-200 rounded-lg flex items-center justify-center text-xl shrink-0 font-bold text-blue-600">2</div>
                 <div>
                     <h4 class="font-bold text-gray-800 text-sm">Menjemput Harapan</h4>
-                    <p class="text-xs text-gray-600 mt-1">Tentang sebuah perjalanan dari seseorang bernama Arta Mahameru, remaja lelaki berusia 12 tahun yang tengah dihadapi oleh berbagai kesulitan dalam hidupnya. Melalui proses penyembuhan diri yang penuh dengan rintangan, Arta selalu menguatkan hatinya untuk menghadapi segala marabahaya yang datang dari masa depan, lalu menjemput satu-satunya harapan yang remaja itu inginkan; ketenangan.
-                        Orang-orang di luar sana memandang Arta sebagai anak yang dilimpahi dengan fasilitas mewah dan megah dengan harta yang gemilang, sangat banyak. Namun, mereka melupakan satu hal. Benar, "keadaan" sebenarnya yang terjadi di dalam rumah itu.
-                        Arta Mahameru ... hidupnya yang sangat malang. Dari guratan wajahnya kelihatan damai, namun, siapa sangka? Isi kepalanya sangat berisik. Tertekan, muak, kecewa, semua emosional itu terus menenggelami dirinya.
-                        Akankah Arta sanggup untuk menjemput harapannya?.</p>
+                    <p class="text-xs text-gray-600 mt-1">Kisah Arta Mahameru (12 tahun) yang tampak hidup dalam kemewahan luar biasa, namun menyimpan isi kepala yang sangat berisik dan tertekan di dalam rumahnya. Perjuangan emosional untuk menjemput ketenangan.</p>
                 </div>
             </div>
         </div>
@@ -650,32 +644,30 @@
     </div>
 </div>
 
-<!-- Script JavaScript Sederhana untuk Mengontrol Modal -->
+<!-- Script JavaScript untuk Mengontrol Modal Novel -->
 <script>
-    const modal = document.getElementById('novelModal');
-    const openBtn = document.getElementById('openNovelBtn');
-    const closeBtn = document.getElementById('closeNovelBtn');
+    const novelModal = document.getElementById('novelModal');
+    const openNovelBtn = document.getElementById('openNovelBtn');
+    const closeNovelBtn = document.getElementById('closeNovelBtn');
 
-    // Buka modal saat tombol di portofolio diklik
-    if (openBtn) {
-        openBtn.addEventListener('click', () => {
-            modal.classList.remove('hidden');
+    if (openNovelBtn) {
+        openNovelBtn.addEventListener('click', () => {
+            novelModal.classList.remove('hidden');
         });
     }
 
-    // Tutup modal saat tombol 'X' diklik
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            modal.classList.add('hidden');
+    if (closeNovelBtn) {
+        closeNovelBtn.addEventListener('click', () => {
+            novelModal.classList.add('hidden');
         });
     }
 
-    // Tutup modal jika klik di luar area kotak modal
     window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.add('hidden');
+        if (e.target === novelModal) {
+            novelModal.classList.add('hidden');
         }
     });
 </script>
+
 </body>
 </html>
